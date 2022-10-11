@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody2D rigidbody;
+    Rigidbody2D Nave_rigidbody;
     Animator animator;
     public float speed = 10;
     public float rotationSpeed = 10;
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        Nave_rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
         if(vertical > 0)
         {
-            rigidbody.AddForce(transform.up * vertical * speed * Time.deltaTime);
+            Nave_rigidbody.AddForce(transform.up * vertical * speed * Time.deltaTime);
             animator.SetBool("MoveBoolean", true);
         }
         else
