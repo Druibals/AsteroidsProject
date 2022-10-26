@@ -18,12 +18,10 @@ public class Teleporter : MonoBehaviour
         if(transform.position.y > limiteY)
         {
             transform.position = new Vector3(transform.position.x, -limiteY);
-            Debug.Log("Estoy arriba");
         }
         if(transform.position.y < -limiteY)
         {
             transform.position = new Vector3(transform.position.x, limiteY);
-            Debug.Log("Estoy abajo");
         }
         if(transform.position.x > limiteX)
         {
