@@ -38,7 +38,7 @@ public class AsteroidControl : MonoBehaviour
         temp2.transform.localScale = transform.localScale * 0.5f;
 
         }
-        GameManager.instance.puntuacion += 5;
+        GameManager.instance.puntuacion += 25;
         manager.conteoasteroide -= 1;
 
 

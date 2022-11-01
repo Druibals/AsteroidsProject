@@ -733,7 +733,6 @@ MonoBehaviour:
   bala: {fileID: 5679111394257117073, guid: d6511f641dad38d43b35eeadba56b23d, type: 3}
   boquilla: {fileID: 1736815830}
   particulaMuerte: {fileID: 4872088316458692032, guid: dec81bf680b827c4580e6012f405484c, type: 3}
-  muerto: 0
 --- !u!212 &785453528
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -775,15 +774,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8fececef8069e3648850affcfb0cc2e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6eab3eac02c22444cb4d47ec2523258a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.859375, y: 0.9921875}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &785453529
@@ -870,9 +869,60 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.06}
   serializedVersion: 2
-  m_Radius: 0.53
+  m_Radius: 0.44
+--- !u!1 &1258991138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258991140}
+  - component: {fileID: 1258991139}
+  m_Layer: 0
+  m_Name: GestorUFO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1258991139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258991138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2594cd27f24c2094fa79335fafa71386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ufo: {fileID: 5843744431069109018, guid: f7fcc05c9297f9c4bb1d694fb1993893, type: 3}
+  speed: 1
+  conteoufo: 0
+  limitX: 10
+  limitY: 6
+  spawnrate: 60
+  nextspawn: 0
+--- !u!4 &1258991140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258991138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.568812, y: 0.37078634, z: -0.019244878}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1333483121
 GameObject:
   m_ObjectHideFlags: 0

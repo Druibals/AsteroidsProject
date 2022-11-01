@@ -21,10 +21,16 @@ public class ShotControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag =="Asteroid")
+        if(collision.CompareTag ("Asteroid")) 
         {
             collision.gameObject.GetComponent<AsteroidControl>().Muerte();
             Destroy(gameObject);
         }
+        if(collision.CompareTag ("UFO"))
+        {
+            collision.gameObject.GetComponent<UFOControl>().Muerte();
+            Destroy(gameObject);
+        }
     }
+
 }

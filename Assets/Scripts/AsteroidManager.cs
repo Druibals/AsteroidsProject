@@ -28,7 +28,6 @@ public class AsteroidManager : MonoBehaviour
 
     void crearAsteroides()
     {
-
         int asteroides = Random.Range(asteroidcount_min, asteroidcount_max);
         for (int i = 0; i < asteroides; i++)
         {

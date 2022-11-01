@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject bala;
     public GameObject boquilla;
     public GameObject particulaMuerte;
-    public bool muerto = false;
+    bool muerto;
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
             {
 
                 GameObject temp = Instantiate(bala, boquilla.transform.position, transform.rotation);
-                Destroy(temp, 1f);
+                Destroy(temp, 1.5f);
             }
         }
     }
@@ -75,8 +75,9 @@ public class PlayerMovement : MonoBehaviour
         }
         transform.position = new Vector3(0, 0, 0);
         Nave_rigidbody.velocity = new Vector2(0, 0);
-        circleCollider.enabled = true;
-        spriteRenderer.enabled = true;
         muerto = false;
+        spriteRenderer.enabled = true;
+        yield return new WaitForSeconds(5);
+        circleCollider.enabled = true;
     }
 }   
