@@ -18,12 +18,6 @@ public class AsteroidControl : MonoBehaviour
         manager.conteoasteroide += 1;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Muerte()
     {
         if(transform.localScale.x > 0.25f)

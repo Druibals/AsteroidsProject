@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
         Nave_rigidbody.velocity = new Vector2(0, 0);
         muerto = false;
         spriteRenderer.enabled = true;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(5); //Respawn Inmunity
         circleCollider.enabled = true;
     }
 }   
